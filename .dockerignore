@@ -1,0 +1,9 @@
+# General
+.DS_Store
+.vscode
+.idea
+.env
+build
+
+# Python Specific
+__pycache__

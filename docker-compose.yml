@@ -1,0 +1,16 @@
+version: '3.4'
+
+services:
+  django-bitly:
+    depends_on:
+      - db
+    build: .
+    env_file:
+      - project.env
+    ports:
+      - '5001:8000'
+
+  db:
+    image: postgres:15.2
+    env_file:
+      - project.env
